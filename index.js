@@ -8,7 +8,6 @@ program
   .option("-p, --phone <type>", "user phone");
 
 program.parse();
-
 const options = program.opts();
 
 // TODO: рефакторити
