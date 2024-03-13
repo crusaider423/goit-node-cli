@@ -1,5 +1,10 @@
 import { program } from "commander";
-import { listContacts,getContactById,addContact,removeContact } from "./contacts.js";
+import {
+  listContacts,
+  getContactById,
+  addContact,
+  removeContact,
+} from "./contacts.js";
 program
   .option("-a, --action <type>", "choose action")
   .option("-i, --id <type>", "user id")
@@ -14,23 +19,23 @@ const options = program.opts();
 async function invokeAction({ action, id, name, email, phone }) {
   switch (action) {
     case "list":
-      const allContacts = await listContacts()
+      const allContacts = await listContacts();
       return console.table(allContacts);
       break;
 
     case "get":
-      const getContact = await getContactById(id)
+      const getContact = await getContactById(id);
       return console.log(getContact);
       break;
 
     case "add":
-     const contactAdd = await addContact(name,email,phone)
-     return console.log(contactAdd);
+      const contactAdd = await addContact(name, email, phone);
+      return console.log(contactAdd);
       break;
 
     case "remove":
-      const deleteContact = await removeContact(id)
-      return  console.log(deleteContact);
+      const deleteContact = await removeContact(id);
+      return console.log(deleteContact);
       break;
 
     default:

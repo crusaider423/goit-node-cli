@@ -5,15 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index",
-    "dev": "nodemon contacts"
+    "start": "node index"
   },
   "author": "",
   "license": "ISC",
   "type": "module",
-  "devDependencies": {
-    "nodemon": "^3.1.0"
-  },
   "dependencies": {
     "commander": "^12.0.0",
     "nanoid": "^5.0.6"
