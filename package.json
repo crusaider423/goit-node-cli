@@ -12,10 +12,10 @@
   "license": "ISC",
   "type": "module",
   "devDependencies": {
-    "commander": "^12.0.0"
+    "nodemon": "^3.1.0"
   },
   "dependencies": {
-    "nanoid": "^5.0.6",
-    "nodemon": "^3.1.0"
+    "commander": "^12.0.0",
+    "nanoid": "^5.0.6"
   }
 }
